@@ -1,7 +1,20 @@
 <?php
+    require_once('account.php');
     class Car {
-        private $id           = integer;
-        private $license      = string;
-        private $driver       = string;
-        private $passegenger  = integer;
+        public $id;
+        public $license;
+        public $driver;
+        public $passegenger;
+
+        public function __construct($id, $license, $driver){
+            $this->id = $id;
+            $this->license = $license;
+            $this->driver = $driver;
+        }
+
+        public function toString(){
+            echo "id : $this->id, licencia : $this->license, Driver : " . $this->driver->name;
+        }
     }
+
+?>

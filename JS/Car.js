@@ -1,13 +1,16 @@
-function Car (id, license, driver) {
-    this.id = id;
-    this.license = license;
-    this.driver = driver;
-    this.passegenger;
-}
+class Car {
 
-Car.prototype.toString = function(){
-    console.log(this.id)
-    console.log(this.license)
-    console.log(this.driver)
-    console.log(this.passegenger)
+    constructor(id, license, driver) {
+        this.id = id;
+        this.license = license;
+        this.driver = driver;
+        this.passegenger;
+    }
+
+    toString() {
+        console.log(this.id)
+        console.log(this.license)
+        console.log(this.driver)
+        console.log(this.passegenger)
+    }
 }

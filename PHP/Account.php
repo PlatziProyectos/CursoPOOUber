@@ -1,8 +1,19 @@
 <?php
     class Account {
-        private $id       = integer;
-        private $name     = string;
-        private $document = string;
-        private $email    = string;
-        private $password = string;
+        public $id;
+        public $name;
+        public $document;
+        public $email;
+        public $password;
+
+        public function __construct($id, $name){
+            $this->id = $id;
+            $this->name = $name;
+        }
+
+        public function toString(){
+            echo "id : $this->id, name : $this->name, document : $this->document, email : $this->email, password : $this->password";
+        }
+
     }
+?>

@@ -1,4 +1,13 @@
 <?php
     class Payment {
-        private $id = integer;
+        public $id;
+
+        public function __construct($id){
+            $this->id = $id;
+        }
+
+        public function toString(){
+            echo "id : $this->id";
+        }
     }
+?>

@@ -22,10 +22,10 @@ public class Car {
     public void setLicense(String license) {
         this.license = license;
     }
-    public String getDriver() {
+    public Account getDriver() {
         return driver;
     }
-    public void setDriver(String driver) {
+    public void setDriver(Account driver) {
         this.driver = driver;
     }
     public Integer getPassegenger() {

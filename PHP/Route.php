@@ -1,6 +1,15 @@
 <?php
     class Route {
-        private $id    = integer;
-        private $start = Array();
-        private $end   = Array();
+        private $id;
+        private $start;
+        private $end;
+
+        public function __construct($id){
+            $this->id = $id;
+        }
+
+        public function toString(){
+            echo "id : $this->id";
+        }    
     }
+?>
