@@ -11,6 +11,9 @@
             $this->seatsMaterial = $seatsMaterial;
         }
 
+        public function toString(){
+            return "[typeCarAccepted : $this->typeCarAccepted, seatsMaterial : $this->seatsMaterial, Car : " . parent::toString() . "]";
+        }
     }
 
 ?>

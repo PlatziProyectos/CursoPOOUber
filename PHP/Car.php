@@ -13,7 +13,7 @@
         }
 
         public function toString(){
-            echo "id : $this->id, licencia : $this->license, Driver : " . $this->driver->name;
+            return "[id : $this->id, licencia : $this->license, Driver : " . $this->driver->toString() . "]";
         }
     }
 

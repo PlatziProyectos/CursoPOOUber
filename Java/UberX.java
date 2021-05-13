@@ -24,5 +24,12 @@ public class UberX extends Car {
     public void setModel(String model) {
         this.model = model;
     }
+
+    @Override
+    public String toString() {
+        return "UberX [brand=" + brand + ", model=" + model + ", " + super.toString() + "]";
+    }
+
+    
     
 }

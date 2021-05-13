@@ -29,4 +29,8 @@ public class UberVan extends Car{
         this.seatsMaterial = seatsMaterial;
     }
 
+    @Override
+    public String toString() {
+        return "UberBlack [seatsMaterial=" + seatsMaterial + ", typeCarAccepted=" + typeCarAccepted + ", " + super.toString()+ "]";
+    }
 }

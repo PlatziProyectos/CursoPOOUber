@@ -3,5 +3,9 @@ public class Main{
         System.out.println("Hola Mundo");
         Car car = new Car(1, "MQ123", new Account(1, "Wilson Neira"));
         System.out.println(car);
+
+        UberX uberX = new UberX(2, "RE#4455", new Account(2, "Gustavo Super"), "CherryQQ", "2021");
+        System.out.println(uberX.toString());
+
     }
 }

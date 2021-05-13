@@ -11,6 +11,9 @@
             $this->model = $model;
         }
 
+        public function toString(){
+            return "[brand : $this->brand, model : $this->model, Car : " . parent::toString() . "]";
+        }
     }
 
 ?>

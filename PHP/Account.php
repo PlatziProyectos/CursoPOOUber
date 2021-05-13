@@ -12,7 +12,7 @@
         }
 
         public function toString(){
-            echo "id : $this->id, name : $this->name, document : $this->document, email : $this->email, password : $this->password";
+            return "[id : $this->id, name : $this->name, document : $this->document, email : $this->email, password : $this->password]";
         }
 
     }

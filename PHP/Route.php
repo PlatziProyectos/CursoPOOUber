@@ -9,7 +9,7 @@
         }
 
         public function toString(){
-            echo "id : $this->id";
+            return "[id : $this->id, start : $this->start, end : $this->end]";
         }    
     }
 ?>
