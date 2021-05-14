@@ -9,3 +9,7 @@ route.toString();
 
 var payment = new Payment(123);
 payment.toString();
+
+var driver = new Driver(13244, "Juan");
+var carPool = new UberPool(1233,"dDD333", driver, "TOYOTA", "YARIS");
+carPool.toString();

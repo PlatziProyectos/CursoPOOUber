@@ -31,13 +31,18 @@ public class Car {
     public Integer getPassegenger() {
         return passegenger;
     }
+
     public void setPassegenger(Integer passegenger) {
         this.passegenger = passegenger;
     }
 
     @Override
     public String toString() {
-        return "Car [driver=" + driver + ", id=" + id + ", license=" + license + ", passegenger=" + passegenger + "]";
+        if (this.passegenger != null) {
+            return "Car [driver=" + driver + ", id=" + id + ", license=" + license + ", passegenger=" + passegenger + "]";
+        }
+
+        return "";
     }
     
 }

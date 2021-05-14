@@ -1,6 +1,8 @@
 from car import Car
 from uberX import UberX
+from uberPool import UberPool
 from account import Account
+from driver import Driver
 from payment import Payment
 from route import Route
 
@@ -19,4 +21,6 @@ if __name__ == "__main__":
     route = Route(123)
     print(vars(route))
 
-
+    driver = Driver(345, "Juan")
+    uberPool = UberPool(4747, "MDJD454", driver, "TOYOTA", "YARIS");
+    print(vars(uberPool))

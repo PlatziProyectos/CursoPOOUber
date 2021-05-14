@@ -11,7 +11,7 @@
             $this->name = $name;
         }
 
-        public function toString(){
+        public function __toString(){
             return "[id : $this->id, name : $this->name, document : $this->document, email : $this->email, password : $this->password]";
         }
 

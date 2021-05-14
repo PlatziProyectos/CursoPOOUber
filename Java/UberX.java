@@ -3,8 +3,9 @@ public class UberX extends Car {
     private String model;
 
     public UberX(Integer id, String license, Account driver,
-        String brand, String model) {
+        Integer passegenger, String brand, String model) {
         super(id, license, driver);
+        setPassegenger(passegenger);
         this.brand = brand;
         this.model = model;
     }
@@ -26,8 +27,21 @@ public class UberX extends Car {
     }
 
     @Override
+    public void setPassegenger(Integer passegenger) {
+        if (passegenger != null && passegenger==4){
+            super.setPassegenger(passegenger); 
+        } else {
+            System.out.println("Debe ingresar 4 passegenger");
+        }
+    }
+
+    @Override
     public String toString() {
-        return "UberX [brand=" + brand + ", model=" + model + ", " + super.toString() + "]";
+        if (super.getPassegenger() != null) {
+            return "UberX [brand=" + brand + ", model=" + model + ", " + super.toString() + "]";
+        }
+
+        return "";
     }
 
     
